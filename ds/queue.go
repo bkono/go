@@ -4,10 +4,6 @@ import (
 	"sync"
 )
 
-type Event struct {
-	Op string
-}
-
 type ConcurrentQueue[T any] struct {
 	underlying *[]T
 	lock       sync.RWMutex
@@ -41,6 +37,12 @@ func (q *ConcurrentQueue[T]) Take(n int) []T {
 	return Take(q.underlying, n)
 }
 
+func (q *ConcurrentQueue[T]) IsEmpty() bool {
+	q.lock.RLock()
+	defer q.lock.RUnlock()
+	return IsEmpty(q.underlying)
+}
+
 func Push[T any](q *[]T, n T) {
 	*q = append(*q, n)
 }
@@ -67,4 +69,8 @@ func Take[T any](q *[]T, n int) []T {
 
 func Len[T any](q *[]T) int {
 	return len(*q)
+}
+
+func IsEmpty[T any](q *[]T) bool {
+	return len(*q) == 0
 }
