@@ -1,3 +1,12 @@
+# [0.2.0](https://github.com/bkono/go/compare/v0.1.0...v0.2.0) (2023-05-01)
+
+
+### Features
+
+* added interval worker for concurrent queues ([4b4e6b0](https://github.com/bkono/go/commit/4b4e6b0e919fec3b1c448b15d7648abbe179123a))
+
+
+
 # [0.1.0](https://github.com/bkono/go/compare/v0.0.1...v0.1.0) (2023-05-01)
 
 
