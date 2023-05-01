@@ -6,6 +6,9 @@ import (
 	"github.com/bkono/go/ds"
 )
 
+// IntervalWorker is a worker that runs at a given interval and processes a batch of items at a time.
+// It allows concurrent pushing of new events, with a controlled, throttled processing.
+// The worker will be idle when the queue is empty, starting processing only once the queue has items, and stopping when it reaches empty.
 type IntervalWorker[T any] struct {
 	Interval  time.Duration
 	TakeCount int

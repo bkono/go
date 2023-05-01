@@ -4,6 +4,7 @@ import (
 	"sync"
 )
 
+// ConcurrentQueue is a thread-safe queue with multiple convenience methods.
 type ConcurrentQueue[T any] struct {
 	underlying *[]T
 	lock       sync.RWMutex
