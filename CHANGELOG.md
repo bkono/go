@@ -1,3 +1,12 @@
+## [0.3.1](https://github.com/bkono/go/compare/v0.3.0...v0.3.1) (2023-05-03)
+
+
+### Bug Fixes
+
+* include common output in Diff ([61c49a2](https://github.com/bkono/go/commit/61c49a2703ad5c46a05bf7357764ba015ab010e8))
+
+
+
 # [0.3.0](https://github.com/bkono/go/compare/v0.2.0...v0.3.0) (2023-05-03)
 
 
