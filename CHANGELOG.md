@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/bkono/go/compare/v0.2.0...v0.3.0) (2023-05-03)
+
+
+### Features
+
+* generic slice diff func ([0d67c0b](https://github.com/bkono/go/commit/0d67c0bce9223453ff68c48a82fcb56cf1da1926))
+
+
+
 # [0.2.0](https://github.com/bkono/go/compare/v0.1.0...v0.2.0) (2023-05-01)
 
 
