@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/bkono/go/compare/v0.3.1...v0.4.0) (2023-05-17)
+
+
+### Features
+
+* middlewaremux and concurrent interval worker support ([8e1d0fa](https://github.com/bkono/go/commit/8e1d0fab1bcbe9cc7e625e002e11b8939e086921))
+
+
+
 ## [0.3.1](https://github.com/bkono/go/compare/v0.3.0...v0.3.1) (2023-05-03)
 
 
