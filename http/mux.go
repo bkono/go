@@ -1,4 +1,4 @@
-package mux
+package http
 
 import "net/http"
 
@@ -20,7 +20,7 @@ func (m *MiddlewareMux) Use(middleware ...Middleware) {
 	m.middleware = append(m.middleware, middleware...)
 }
 
-// Implement ServeHTTP for MiddlewareMux ensuring the sequence of middleware is preserved in order of Use calls
+// ServeHTTP for MiddlewareMux ensures the sequence of middleware is preserved in order of Use calls
 func (m *MiddlewareMux) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	var h http.Handler = m.ServeMux
 	// preserve linear order, first .Use is first executed
