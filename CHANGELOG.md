@@ -1,3 +1,12 @@
+# [0.5.0](https://github.com/bkono/go/compare/v0.4.0...v0.5.0) (2023-05-20)
+
+
+### Features
+
+* add way router with middleware support ([dc0af93](https://github.com/bkono/go/commit/dc0af93a91c4fb115584da83dadf0abe124f3351))
+
+
+
 # [0.4.0](https://github.com/bkono/go/compare/v0.3.1...v0.4.0) (2023-05-17)
 
 
